@@ -3,13 +3,12 @@ function icecreamList () {
   let body = document.querySelector('body');
   let ul = document.createElement('ul')
 
-  // document.createElement('ul');
   body.append(ul);
 
   icecream.forEach(function(flavor) {
     const li = document.createElement('li');
     li.append(flavor);
-    ul.append(li);
+    ul.prepend(li);
   })
 }
 
